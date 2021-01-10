@@ -1302,8 +1302,8 @@ print(submission_df)
 
 
 ```python
-df = pd.read_csv('submission.csv')
-df.head(15)
+submission_df = pd.read_csv('submission.csv')
+submission_df.head(15)
 ```
 
 
@@ -1522,13 +1522,13 @@ plt.plot(testsc,t_sc,'r-',label = 'set dev test')
 
 ```python
 submission_df1 = pd.DataFrame(zip(test_idxs, y_pred), columns = ['Id', 'Price'])
-submission_df1.to_csv('submission.csv', index=False)
+submission_df1.to_csv('submission1.csv', index=False)
 ```
 
 
 ```python
-df1 = pd.read_csv('submission.csv')
-df1.head(20)
+submission_df1 = pd.read_csv('submission1.csv')
+submission_df1.head(20)
 ```
 
 
